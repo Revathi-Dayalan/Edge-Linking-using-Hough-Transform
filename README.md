@@ -1,29 +1,34 @@
-### Aim:
+# Edge-Linking-using-Hough-Transform
+## Aim:
 To write a Python program to detect the lines using Hough Transform.
 
-### Software required:
+## Software Required:
 Anaconda - Python 3.7
 
-### Algorithm:
-### Step1:
+## Algorithm:
+### Step 1:
 Import all the necessary modules for the program.
+<br>
 
-### Step2:
+### Step 2:
 Load a image using imread() from cv2 module.
+<br>
 
 ### Step3:
 Convert the image to grayscale.
+<br>
 
-### Step4:
+### Step 4:
 Using Canny operator from cv2,detect the edges of the image.
+<br>
 
-### Step5:
+### Step 5:
 Using the HoughLinesP(),detect line co-ordinates for every points in the images.Using For loop,draw the lines on the found co-ordinates.Display the image.
-
-### Program:
-
+<br>
 
 
+## Program:
+```Python
 # Read image and convert it to grayscale image
 import cv2
 import numpy as np
@@ -54,8 +59,19 @@ for line in lines:
 # Display the result
 plt.title('Hough Lines')
 plt.imshow(edges1,'gray')
+```
+## Output:
+<br>
 
-### Output:
-![REVA1](https://user-images.githubusercontent.com/96000574/175816240-4e642b43-e65b-420e-9b74-24e3c22ff109.png)
-![REVA2](https://user-images.githubusercontent.com/96000574/175816249-54e20e7f-25ae-4fa1-b97b-33c551784a48.png)
-![REVA3](https://user-images.githubusercontent.com/96000574/175816257-101bb3f9-5498-4178-ad51-528e457ade52.png)
+![Output](r1.png)
+
+<br>
+
+![Output](r2.png)
+
+<br>
+
+![Output](r3.png)
+
+## Result:
+Thus the program is written with python and OpenCV to detect lines using Hough transform. 
